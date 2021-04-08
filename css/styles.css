@@ -469,13 +469,14 @@ font-style: normal;
 .customers-list {
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: space-between;   
     margin-left: -30px;
     margin-top: -30px;
 }
 
 .customers-item {
     display: flex;   
+    justify-content: space-between;
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -751,7 +752,6 @@ font-style: normal;
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    outline: none;
     cursor: pointer;
 }
 
@@ -783,7 +783,6 @@ font-style: normal;
 .projects-link:hover,
 .projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
 }
 
 .projects-list-wrapper {
@@ -796,6 +795,7 @@ font-style: normal;
     top: 0; 
     left: 0;
     background-color: transparent;
+    overflow: hidden;
     color: var(--primary-color);
     padding: 63px 24px;
     font-weight: 400;
@@ -914,9 +914,14 @@ font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    margin-bottom: 10px;
     letter-spacing: 0.01em;
     color: var(--primary-contact-color);
     cursor: pointer;
+}
+
+.last-modal-form-field {
+    margin-bottom: 20px;
 }
 
 .modal-form-input {
@@ -937,7 +942,7 @@ border-color: var(--accent-color);
     position: relative;
     display: block;
     margin-top: 4px;
-    margin-bottom: 10px;
+    
 }
 
 .modal-form-icon {
@@ -983,7 +988,7 @@ border-color: var(--accent-color);
     letter-spacing: 0.03em;
     color: var(--primary-contact-color);
     align-items: center;
-    margin-top: 20px;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 
@@ -1024,6 +1029,7 @@ border-color: var(--accent-color);
     align-self: center;
     text-align: center;
     letter-spacing: 0.06em;
+    
     background-color: var(--accent-color);
     color: var(--primary-color);
     cursor: pointer;
